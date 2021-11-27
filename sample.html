@@ -1,0 +1,77 @@
+tn7" class="btn btn-primary m-2 float-start">이미지 초기화</button>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        var filePath = 'fox.jpg';
+        const image = document.getElementById('image');
+        const fileName = document.getElementById('file_name');
+        const filterButton = document.getElementById('filter_btn');
+        const notFileName = image.src;
+
+        // 이미지 선택 버튼
+        document
+            .getElementById('image_btn')
+            .addEventListener('click', function () {
+                image.src = filePath;
+                fileName.innerHTML = filePath;
+                filterButton.style.display = 'inline-block';
+            });
+
+        // 이미지 필터 버튼
+        document.getElementById('btn1').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.filter = 'grayscale(100%)';
+            }
+        });
+        document.getElementById('btn2').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.filter = 'blur(3px)';
+            }
+        });
+        document.getElementById('btn3').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.filter = 'drop-shadow(10px 10px 3px grey';
+            }
+        });
+        document.getElementById('btn4').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.filter = 'opacity(50%)';
+            }
+        });
+        document.getElementById('btn5').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.transform = 'rotate(270deg)';
+            }
+        });
+        document.getElementById('btn6').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.transform = 'rotate(90deg)';
+            }
+        });
+        document.getElementById('btn7').addEventListener('click', function() {
+            if (image.src == notFileName) {
+                alert('이미지가 아닙니다.');
+            } else {
+                image.style.filter = '';
+                image.style.transform = 'rotate(0deg)';
+            }
+        });
+    </script>
+    <script></script>
+</html> 
