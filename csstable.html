@@ -1,13 +1,65 @@
+
 <html>
     <head>
-        <title>csstable</title>
+        <title></title>
     </head>
     <style>
+        body{
+            text-align: center;
+        }
+        div {
+            display: inline-block;
+            position: absolute; 
+            text-align: center;
+            
+        }
+        #div1 {
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+        #div2 {
+            background-color: yellow;
+            left: 200px;
+            top: 0;
+        }
+        #div3 {
+            background-color: blue;
+            top: 100px;
+            left: 0;
+        }
+        #div4 {
+            background-color: green;
+            top: 200px;
+            left: 100px;
+        }
+        #div5 {
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+        #image {
+            width: 100px;
+            height: 100px;
+        }
+        .type1 {
+            height: 200px;
+            width: 100px;
+        }
+        .type2 {
+            height: 100px;
+            width: 200px;
 
+        }
     </style>
     <body>
-        
+        <div class="type2" id="div1">4</div>
+        <div class="type1" id="div2">1</div>
+        <div class="type1" id="div3">3</div>
+        <div class="type2" id="div4">2</div>
+        <div id="div5"><img id="image" src="람썬1.png"></div>
 
-        
     </body>
 </html>
